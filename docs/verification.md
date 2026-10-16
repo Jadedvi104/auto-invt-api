@@ -19,7 +19,7 @@ Docker Compose startup was **not verified locally**. Docker Desktop was started,
 
 Historical hosted validation of the identical implementation passed in the original combined repository at commit `30d1d7335d6687572ec608c72d2390851e740e88`: [Inventory API CI](https://github.com/Jadedvi104/asyn-web-data/actions/runs/38843929534) verified lint, formatting, PostgreSQL migrations and tests, package build, Compose startup, healthy services and live API smoke checks. That run used `inventory-api/` as its working directory.
 
-The standalone `Jadedvi104/auto-invtory-rest` repository has the equivalent pipeline rooted at the repository directory. Per-commit results are available in [standalone repository Actions](https://github.com/Jadedvi104/auto-invtory-rest/actions). The historical run records implementation validation; use the standalone workflow for current repository status.
+The standalone `Jadedvi104/auto-invt-api` repository has the equivalent pipeline rooted at the repository directory. Per-commit results are available in [standalone repository Actions](https://github.com/Jadedvi104/auto-invt-api/actions). The historical run records implementation validation; use the standalone workflow for current repository status.
 
 External reviewer demo and sign-off: pending.
 
@@ -37,7 +37,7 @@ External reviewer demo and sign-off: pending.
 | INV-08 invalid payload | Tests cover 422 responses and unchanged stored state. |
 | INV-09 Compose startup | Passed in the historical hosted Inventory API CI for the identical implementation; the standalone workflow repeats the container health and API smoke checks. |
 
-Commands below run from the root of the standalone `auto-invtory-rest` repository.
+Commands below run from the root of the standalone `auto-invt-api` repository.
 
 ## Reproduction
 
